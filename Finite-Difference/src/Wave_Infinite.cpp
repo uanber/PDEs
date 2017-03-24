@@ -105,7 +105,7 @@ int main()
         //solve for interior of the domain:
         
         for (int j=1; j<nx; j++) {
-            U2[j]=-U0[j]+coeff*U1[j]+sigma*(U1[j-1]+U1[j+1]);
+            U2[j]=-U0[j]+coeff*U1[j]+sigma2*(U1[j-1]+U1[j+1]);
         }
         // impose boundary condtions at one boundary only, then use periodicity:
         
